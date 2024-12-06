@@ -3,7 +3,7 @@ import { useState } from 'react';
 export default function Cal() {
   const [input, setInput] = useState('');
 
-  // Handle button click
+
   const handleClick = (value) => {
     setInput(input + value);
   };
@@ -63,7 +63,7 @@ export default function Cal() {
   );
 }
 
-// Styling object for the calculator
+
 const styles = {
   calculator: {
     padding: '20px',
