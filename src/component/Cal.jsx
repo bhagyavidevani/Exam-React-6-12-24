@@ -120,7 +120,7 @@ const styles = {
     transition: 'all 0.2s ease-in-out',
   },
   clearButton: {
-    backgroundColor: '#8EA3A6', 
+    backgroundColor: '#CA7373', 
     color: '#fff',
     padding: '20px',
     fontSize: '18px',
