@@ -1,15 +1,20 @@
 import { useState } from 'react';
 
 export default function Cal() {
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState('0');
 
 
   const handleClick = (value) => {
-    setInput(input + value);
+    if(input === '0'){
+      setInput(""+value)
+    }
+    else{
+      setInput(input + value);
+    }
   };
 
   const handleClear = () => {
-    setInput('');
+    setInput('0');
   };
 
   const handleCalculate = () => {
@@ -22,7 +27,7 @@ export default function Cal() {
       setInput(result.toString());
     } catch (e) {
       setInput('Error');
-      // console.log("Error")
+      console.log("Error",e)
     }
     
   };
@@ -115,7 +120,7 @@ const styles = {
     transition: 'all 0.2s ease-in-out',
   },
   clearButton: {
-    backgroundColor: '#CA7373', 
+    backgroundColor: '#8EA3A6', 
     color: '#fff',
     padding: '20px',
     fontSize: '18px',
